@@ -48,4 +48,7 @@ func main() {
 	sort.Ints(scores)
 	fmt.Println("Sorted scores: ", scores)
 
+	// To remove a value from slice from a Index
+	scores = append(scores[:2], scores[3:]...)
+	fmt.Println("After removing one value : ", scores)
 }
